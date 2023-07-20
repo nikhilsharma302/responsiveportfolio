@@ -1,0 +1,124 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+.reg{
+    font-weight:normal;
+}
+body{
+     height:100%;
+     color:black;
+    width:100%;
+    background:linear-gradient(white,lightblue);
+}
+.hero{ 
+    font-size: 1.5em;
+    margin-top:1vh;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 10vw;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    font-size: 24px;
+    
+    
+}
+.mar5{
+    margin:5vw;
+}
+.hero >.navbar> a { 
+    color:black;
+    text-decoration: none;
+    font-size: 16px;
+
+}
+.logo::first-letter{
+    color:blue;
+}
+.info h2{
+    font-weight: normal;
+}
+.info>h2>span{
+    font-weight: bold;
+}
+.main{
+    display : grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.main img{
+    width:20vw;
+    border-radius: 50%;
+    border:5px red double;
+    box-shadow: 2px 2px pink;
+}
+.btn{
+    padding: 1vw;
+    border-radius: 3px;
+    border-style: none;
+    color:white;
+    background-color:lightseagreen;
+}
+.about{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap:2vw;
+    row-gap:3vw;
+    grid-template-rows: max-content;
+}
+.project{
+    display:grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 2vw;
+    row-gap:3vw;
+}
+@media screen and (max-width:720px)
+{
+    body{
+        color:white;
+        margin:5vw; 
+    background:linear-gradient(lightblue,blue);
+    }
+        .button{
+            display:grid;
+            grid-template-columns: 80%;
+            justify-content: center;
+            row-gap: 2vw;
+
+        }
+    
+ .hero{ 
+    grid-template-columns: 80%;
+    grid-template-rows:auto auto auto auto;
+ } 
+ .main{
+    grid-template-columns: 80%;
+ }  
+ .about{
+     grid-template-columns: 80%;
+     border-bottom: 2px double black;
+     justify-content: center;
+         
+ }
+ .about h5{
+   
+    margin-bottom: 1vw;
+ }
+ .project{
+    grid-template-columns:auto;
+    border-bottom: 2px double black;
+    justify-content: center;
+    
+
+    
+ }
+  
+ .hero >.navbar> a {
+    color:red;
+
+ }
+}
