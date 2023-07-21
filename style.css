@@ -107,7 +107,7 @@ body{
 @media screen and (max-width:720px)
 {
     body{
-        color:white;
+        color:blue;
         margin:5vw; 
     background:linear-gradient(pink,lightblue);
     }
