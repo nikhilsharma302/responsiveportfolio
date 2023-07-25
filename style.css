@@ -1,0 +1,155 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+.reg{
+    font-weight:normal;
+}
+body{
+     height:100%;
+     color:black;
+    width:100%;
+    background:linear-gradient(white,lightblue);
+}
+.hero{ 
+    font-size: 1.5em;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 10vw;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    font-size: 24px;
+    
+    
+}
+.mar5{
+    margin:3vh 3vw;
+    
+}
+.inline{
+    display:inline;
+}
+.hero >.navbar> a { 
+    color:black;
+    text-decoration: none;
+    font-size: 16px;
+
+}
+.logo::first-letter{
+    color:blue;
+}
+.info h2{
+    font-weight: normal;
+}
+.info>h2>span{
+    font-weight: bold;
+}
+.main{
+    display : grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.main img{
+    width:20vw;
+    border-radius: 50%;
+    border:5px blue double;
+    box-shadow: 2px 2px pink;
+}
+.btn{ margin-right: 2%;
+    padding: 1vw;
+    border-radius: 3px;
+    border-style: none;
+    color:white;
+    background-color:lightseagreen;
+}
+.about{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap:2vw;
+    row-gap:3vw;
+    grid-template-rows: max-content;
+}
+.project{
+    display:grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 2vw;
+    row-gap:3vw;
+}
+/* my skills and footer styles */
+
+.skill
+{ display:flex;
+    justify-content:left;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex:1;
+}
+.skill img{
+    height:5%;
+    width:5%;
+}
+.mar5 .copyright{
+    margin-top:2vw;
+    text-align:center;
+}
+button:hover,.info img:hover {
+    transform:scale(1.1);
+}
+.navbar a:hover,.main span:hover,.hov:hover{
+     display:inline-block;
+    transform:scale(1.1);
+}
+
+@media screen and (max-width:720px)
+{
+    body{
+        color:blue;
+        margin:5vw; 
+    background:linear-gradient(pink,lightblue);
+    }
+        .button{
+            display:grid;
+            grid-template-columns: 80%;
+            justify-content: center;
+            row-gap: 2vw;
+        }
+    
+ .hero{ 
+    grid-template-columns: 80%;
+    grid-template-rows:auto auto auto auto;
+ } 
+ .logo::first-letter{
+    color:red;}
+ .main{
+    grid-template-columns: 80%;
+ }  
+ .main img{ border-color:red;}
+ .about{
+     grid-template-columns: 80%;
+     border-bottom: 2px double black;
+     justify-content: center;
+         
+ }
+ .about h5{
+   
+    margin-bottom: 1vw;
+ }
+ .project{
+    grid-template-columns:auto;
+    border-bottom: 2px double black;
+    justify-content: center;    
+   
+ }
+ .skill img{
+    height:10%;
+    width:10%;}
+ .hero >.navbar> a {
+    color:red;
+ }
+ 
+}
