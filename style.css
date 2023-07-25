@@ -88,16 +88,11 @@ body{
     flex-wrap: wrap;
     flex-direction: row;
     flex:1;
-    
-    
 }
 .skill img{
     height:5%;
     width:5%;
 }
-
- 
-
 .mar5 .copyright{
     margin-top:2vw;
     text-align:center;
@@ -122,7 +117,6 @@ button:hover,.info img:hover {
             grid-template-columns: 80%;
             justify-content: center;
             row-gap: 2vw;
-
         }
     
  .hero{ 
