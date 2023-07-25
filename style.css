@@ -14,7 +14,6 @@ body{
 }
 .hero{ 
     font-size: 1.5em;
-    
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: 10vw;
@@ -60,7 +59,7 @@ body{
     border:5px blue double;
     box-shadow: 2px 2px pink;
 }
-.btn{
+.btn{ margin-right: 2%;
     padding: 1vw;
     border-radius: 3px;
     border-style: none;
@@ -102,6 +101,13 @@ body{
 .mar5 .copyright{
     margin-top:2vw;
     text-align:center;
+}
+button:hover,.info img:hover {
+    transform:scale(1.1);
+}
+.navbar a:hover,.main span:hover,.hov:hover{
+     display:inline-block;
+    transform:scale(1.1);
 }
 
 @media screen and (max-width:720px)
@@ -150,6 +156,6 @@ body{
     width:10%;}
  .hero >.navbar> a {
     color:red;
-
  }
+ 
 }
