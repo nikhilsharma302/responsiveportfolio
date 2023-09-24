@@ -21,8 +21,10 @@ body{
     align-items: center;
     font-weight: bold;
     font-size: 24px;
-    
-    
+}
+.btn a{
+    text-decoration: none;
+    color:white;
 }
 .mar5{
     margin:3vh 3vw;
